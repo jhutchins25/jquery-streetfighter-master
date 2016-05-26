@@ -1,0 +1,93 @@
+body {
+	background-color: black;
+}
+.main {
+	background-color: white;
+	margin-top: 110px;
+	padding-left: 100px;
+	padding-right: 100px;
+	min-width: 1200px;
+	height: 500px;
+	position: relative;
+	z-index: 1;
+
+}
+.ryu {
+	float: left;
+	width: 659px;
+	height: 494px;
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .hulk-ryu-ready,
+ .hulk-ryu-still, .hulk-ryu-throwing, .hulk-ryu-cool{
+	width: 659px;
+	height: 494px;
+}
+
+.ryu-ready, .ryu-throwing, .ryu-cool, .hulk-ryu-ready, .hulk-ryu-throwing,
+ .hulk-ryu-cool{
+	display: none;
+}
+
+.ryu-ready, .hulk-ryu-ready {
+  background-image: url('../images/ryu-ready-position.gif');
+}
+
+.ryu-still, .hulk-ryu-still {
+  background-image: url('../images/ryu-standing-still.png');
+}
+
+.ryu-throwing, .hulk-ryu-throwing {
+  background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .hulk-ryu-ready, .hulk-ryu-throwing,
+ .hulk-ryu-cool, .hulk-ryu-still, .hulk-hadouken {
+	background-repeat: no-repeat;
+}
+.hadouken {
+  background-image: url('../images/hadouken.gif');
+  width: 156px; 
+  height: 90px;
+  display: none;
+  float: left;
+  position: absolute;
+  z-index: 10;
+  top: 167px;
+  left: 520px;
+}
+
+.ryu-cool, .hulk-ryu-cool {
+	background-image: url('../images/ryu-cool.gif');
+}
+
+.hulk-ryu {
+    -webkit-filter: hue-rotate(90deg);
+    float: right;
+	width: 659px;
+	height: 494px;
+	-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+.hulk-hadouken {
+  background-image: url('../images/hadouken.gif');
+  width: 156px; 
+  height: 90px;
+  display: none;
+  float: right;
+  position: absolute;
+  z-index: 10;
+  top: 167px;
+  right: 520px;
+  -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+ 
+}
