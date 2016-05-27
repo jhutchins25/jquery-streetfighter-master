@@ -25,7 +25,7 @@ $(document).ready(function(){
 	.mouseup(function() {
   		$('.ryu-hide').hide();
   		$('.ryu-ready').show();
-	})
+	});
 
 	$('body').keydown(function(e) {
 		if(e.which == 88){
